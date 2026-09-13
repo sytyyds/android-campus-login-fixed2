@@ -77,12 +77,12 @@ class MainActivity : AppCompatActivity() {
         userInput = EditText(this).apply {
             hint = "学号"
             inputType = InputType.TYPE_CLASS_TEXT
-            singleLine = true
+            isSingleLine = true
         }
         passwordInput = EditText(this).apply {
             hint = "密码"
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
-            singleLine = true
+            isSingleLine = true
         }
         val login = Button(this).apply {
             text = "连接并认证"
